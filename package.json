@@ -1,0 +1,36 @@
+{
+  "name": "mabel",
+  "version": "1.0.0",
+  "description": "Express Server",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gabriel80546/mabel.git"
+  },
+  "keywords": [
+    "Express",
+    "Javascript",
+    "JS"
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gabriel80546/mabel/issues"
+  },
+  "homepage": "https://github.com/gabriel80546/mabel#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "helmet": "^4.6.0",
+    "moment": "^2.29.1",
+    "mongoose": "^6.0.12",
+    "underscore": "^1.13.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.14"
+  }
+}
