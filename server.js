@@ -1,11 +1,19 @@
-const express = require('express');
-const app = express();
 require('dotenv').config();
+const express = require('express');
+const helmet = require('helmet');
+const cors = require('cors');
+const bodyParser = require('body-parser');
+const app = express();
+
+// Midleware
+app.use(helmet());
+app.use(cors());
+app.use(express.json());
 
 app.get('/', (req, res) => {
     res.send('Hello world');
-}
+})
 
-app.listen(process.env.HOST_PORT, () => [
+app.listen(process.env.HOST_PORT, () => {
     console.log(`Listening at http://${process.env.HOST_NAME}:${process.env.HOST_PORT}`);
-]);
+});
